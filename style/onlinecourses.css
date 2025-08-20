@@ -1,0 +1,122 @@
+@charset "utf-8";
+
+.container {
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+    width: 80%;
+    height: auto;
+}
+
+.online-illustration {
+    text-align: center;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.indent {
+    margin-left: 1.8rem;
+}
+
+.super-indent {
+    margin-left: 6rem;
+}
+
+.ultra-indent {
+    margin-left: 10rem;
+}
+
+.twoitems {
+    margin-top: 20px;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+.twoitems li {
+    width: 48%;
+    display: block;
+    background-color: rgba(255, 255, 255, .8);
+}
+
+.item-head p {
+    line-height: 50px;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 30px;
+    font-size: larger;
+    border-bottom: 1px solid #ddd;
+}
+
+.item-body {
+    padding: 10px;
+    height: auto;
+    display: block;
+}
+
+.twoitems li:last-child .item-body {
+    text-align: center;
+}
+
+.twoitems li .count-list-item {
+    display: block;
+}
+
+.fa-solid {
+    color: cornflowerblue;
+    font-size: 2rem;
+    margin-right: 5px;
+}
+
+input {
+    background-color: khaki;
+    font-size: 1rem;
+    border-radius: 20px;
+    width: 8rem;
+}
+
+input:hover {
+    background-color: yellow;
+}
+
+.visa-body {
+    position: relative;
+}
+
+.register-btn {
+    position: absolute;
+    text-align: center;
+    top: -15px;
+    left: 40%;
+    z-index: 15;
+}
+
+.cite-indent {
+    margin-left: 7rem;
+    text-indent: -4.8rem;
+}
+
+.count-list-item-2 {
+    display: flex;
+    counter-increment: new-counter;
+}
+
+.count-list-item-2::before {
+    content: counter(new-counter) ".";
+    margin-right: 18px;
+}
+
+@media screen and (max-width: 920px) {
+    .twoitems {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .twoitems li {
+        width: 100%;
+    }
+}

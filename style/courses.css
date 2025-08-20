@@ -1,0 +1,135 @@
+@charset "utf-8";
+
+.container {
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+    width: 80%;
+    height: auto;
+}
+
+h3 {
+    background-image: linear-gradient(to right, goldenrod, #fff);
+    color: #fff;
+    text-shadow: 2px 2px 2px rgba(0,0,0,.5);
+    padding-top: 7px;
+    height: 2.6rem;
+    line-height: 2.4rem;
+    font-size: 2rem;
+    font-weight: bolder;
+    text-indent: 1em;
+}
+
+.main {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    height: auto;
+    display: flex;
+    gap: 0; 
+    position: relative;
+}
+
+.main-desc {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    z-index: 5;
+}
+
+.main-desc div {
+    width: 33%;
+    min-width: 280px;
+    z-index: 10;
+    text-align: center;
+    padding: 20px 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.desc-img {
+    border: 1px solid #000;
+    border-radius: 50%;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, .5);
+    width: 220px;
+    height: 220px;
+}
+
+.desc-title {
+    font-weight: bold;
+    font-size: 2rem;
+    color: #222;
+}
+
+.desc-text {
+    font-size: 1rem;
+    color: brown;
+    font-weight: bold;
+}
+
+input {
+    background-color: khaki;
+    font-size: 1rem;
+    border-radius: 20px;
+    width: 8rem;
+}
+
+input:hover {
+    background-color: yellow;
+}
+
+.course-list {
+    display: block;
+    width: 90%;
+    height: 2.6rem;
+    line-height: 2.6rem;
+    background-color: goldenrod;
+    color: #000; 
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+
+.course-list:hover {
+    background-color: khaki;
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, .5);
+    transform: translate(-2px, -2px); 
+}
+
+.dreamNTU {
+    margin-top: 120px; 
+    margin-bottom: 60px;
+    border: 5px solid #fff; 
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, .5);
+}
+
+@media screen and (max-width: 920px) {
+    h3 {
+        text-align: center;
+        text-indent: 0;
+        background-image: none;
+        background-color: goldenrod;
+    }
+
+    .main {
+        margin-top: 3rem;
+    }
+
+    .main-desc {
+        display: block;
+        width: 100%;
+        background-image: none;
+    }
+
+    .main-desc div {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 60px;
+        gap: 5px; 
+    }
+}
+
+@media screen and (max-width: 565px) {
+    h3 {
+        margin-top: 2rem;
+    }
+}

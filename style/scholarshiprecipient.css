@@ -1,0 +1,178 @@
+@charset "utf-8";
+
+.container {
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+    width: 80%;
+    height: auto;
+}
+
+h3 {
+    background-image: linear-gradient(to right, goldenrod, #fff);
+    color: #fff;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
+    padding-top: 7px;
+    height: 2.6rem;
+    line-height: 2.4rem;
+    font-size: 2rem;
+    font-weight: bolder;
+    text-indent: 1em;
+    margin-bottom: 30px;
+}
+
+.warning {
+    position: relative;
+    background-color: pink;
+    border: 2px dotted hotpink;
+    width: 70%;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    padding: 2rem;
+    font-size: 1.1rem;
+}
+
+.warning a {
+    color: rgb(250, 13, 131);
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.fa-triangle-exclamation {
+    position: absolute;
+    top: 1rem;
+    left: -78px;
+    font-size: 78px;
+    color: rgb(255, 0, 128);
+}
+
+.warning input {
+    border: 2px solid rgb(255, 0, 128);
+    background-color: hotpink;
+    font-size: 1rem;
+    padding: 5px 20px;
+    border-radius: 20px;
+    position: absolute;
+    right: 20px;
+    bottom: -20px;
+    cursor: pointer;
+}
+
+.warning input:hover {
+    color: #fff;
+}
+
+.schol-sec {
+    width: 95%;
+    margin-left: 2%;
+    margin-bottom: 50px;
+}
+
+.schol-sec a {
+    font-weight: 560;
+    color: rgb(136, 99, 5);
+}
+
+.schol-sec a:hover {
+    color: crimson;
+}
+
+.schol-title {
+    line-height: 2rem;
+    font-size: 1.1rem;
+    font-weight: bolder;
+    color: brown;
+}
+
+.schol-body {
+    background-color: rgb(250, 247, 233);
+    padding-left: 50px;
+}
+
+.schol-body>li {
+    position: relative;
+    line-height: 2rem;
+    font-size: 1.2rem;
+    display: flex;
+    gap: 20px;
+}
+
+.schol-body h6 {
+    width: 15%;
+    text-align: center;
+}
+
+.inner-list {
+    width: 85%;
+}
+
+.inner-list ul p {
+    margin-left: 1.5em;
+    text-indent: -1.4em;
+}
+
+.outer-list li p::before,
+.inner-list li p::before {
+    content: "•";
+    font-size: 1.4rem;
+    margin-right: 20px;
+    color: brown;
+}
+
+.fa-bullhorn {
+    position: absolute;
+    color: darkgoldenrod;
+    font-size: 20px;
+    top: 5px;
+    left: -39px;
+}
+
+.schol-sec input {
+    background-color: khaki;
+    font-size: 1rem;
+    border-radius: 20px;
+    width: 8rem;
+    margin-left: 1rem;
+}
+
+.schol-sec input:hover {
+    background-color: yellow;
+}
+
+.new {
+    display: inline-block;
+    height: 2rem;
+    margin: 0 -20px;
+    padding: 0 10px;
+    border-radius: 10px;
+    background-color: crimson;
+    color: #fff;
+    animation-name: throb;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes throb {
+    from {
+        transform: scale(.8);
+    }
+
+    to {
+        transform: scale(.7);
+    }
+}
+
+@media screen and (max-width: 920px) {
+    h3 {
+        text-align: center;
+        text-indent: 0;
+        background-image: none;
+        background-color: goldenrod;
+    }
+}
+
+@media screen and (max-width: 565px) {
+    h3 {
+        margin-top: 2rem;
+    }
+}

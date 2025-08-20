@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+.container {
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+    width: 80%;
+    height: auto;
+}
+
+.notabene {
+    background-color: rgb(193, 243, 193);
+    color: green;
+}
+
+.notabene-lite {
+    font-weight: 600;
+    color: green;
+}
+
+.sitemap-header {
+    line-height: 1.5;
+}
+
+.indent {
+    margin-left: 2rem;
+}

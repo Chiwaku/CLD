@@ -1,0 +1,305 @@
+@charset "utf-8";
+
+.container {
+    margin-top: 4rem;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.banner {
+    text-align: center;
+    background-image: linear-gradient(lightgoldenrodyellow, #fff);
+}
+
+.link-out {
+    position: fixed;
+    background-color: khaki;
+    opacity: .8;
+    right: 10px;
+    top: 120px;
+    line-height: 1.5rem;
+    padding: 7px;
+    font-size: .8rem;
+    z-index: 50;
+}
+
+.link-out a {
+    display: block;
+    color: rgb(122, 76, 8);
+}
+
+.link-out a:hover {
+    background-color: lightgoldenrodyellow;
+    color: brown;
+    opacity: 1;
+}
+
+.announce {
+    width: 100%;
+    height: auto;
+    line-height: 1.6rem;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.announce-table {
+    width: 78%;
+    min-width: 800px;
+    margin-top: 20px;
+    margin-bottom: auto;
+    position: relative;
+    left: 10%;
+    background-color: lightgoldenrodyellow;
+    border-radius: 30px 0 30px 0;
+    box-shadow: 0px 0px 5px 3px rgba(220, 200, 120, .6);
+    overflow: hidden;
+}
+
+.announce-table a {
+    color: orangered;
+    font-weight: bold;
+}
+
+.fa-bullhorn {
+    position: absolute;
+    color: darkgoldenrod;
+    font-size: 24px;
+    --fa-rotate-angle: -30deg;
+    top: 5px;
+    margin-left: 20px;
+}
+
+.announce-table tr:first-child td {
+    padding-top: 10px;
+    padding-left: 23px;
+    font-weight: bolder;
+    color: darkgoldenrod;
+    font-size: larger;
+}
+
+.announce-table td {
+    padding: 5px 0 5px 20px;
+}
+
+.announce-table tr:nth-child(even) {
+    background-color: #fff;
+}
+
+.announce-table tr:hover {
+    background-color: yellow;
+}
+
+.announce-table tr:first-child:hover {
+    background-color: lightgoldenrodyellow;
+}
+
+.main {
+    margin-top: 50px;
+    height: 477px;
+    display: flex;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+}
+
+.main-pic {
+    width: 720px;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    z-index: -1;
+}
+
+.main-pic::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    background-image: linear-gradient(to right, transparent, #fff);
+}
+
+.main-desc {
+    position: absolute;
+    right: 0;
+    display: flex;
+    width: 75%;
+    height: 100%;
+    z-index: 5;
+    background-image: linear-gradient(to right, transparent 0, transparent 10%, #fff 20%);
+}
+
+.main-desc div {
+    width: 35%;
+    min-width: 280px;
+    z-index: 10;
+    text-align: center;
+    padding: 20px 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.main-desc div:last-child {
+    padding-right: 70px;
+}
+
+.desc-img {
+    border: 1px solid #000;
+    border-radius: 50%;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, .5);
+    width: 220px;
+    height: 220px;
+}
+
+.desc-title {
+    font-weight: bold;
+    font-size: 2rem;
+    color: #222;
+    background-color: rgba(255, 255, 255, .5);
+    text-shadow:
+        1px 1px 0 #fff,
+        1px -1px 0 #fff,
+        -1px -1px 0 #fff,
+        -1px 1px 0 #fff;
+}
+
+.desc-text {
+    font-size: 1rem;
+    color: brown;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, .5);
+}
+
+.main-desc div:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.main-desc div:hover img {
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, .8);
+    border: 3px solid khaki;
+}
+
+.pic-strip {
+    display: flex;
+    position: relative;
+}
+
+input {
+    background-color: khaki;
+    font-size: 1rem;
+    border-radius: 20px;
+    width: 8rem;
+}
+
+input:hover {
+    background-color: yellow;
+}
+
+.alumni {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 800px;
+    height: auto;
+}
+
+.alumni-profile {
+    display: flex;
+}
+
+.alumni-info {
+    width: 30%;
+    text-align: center;
+    margin-top: 10px;
+    line-height: 2rem;
+}
+
+.alumni-title {
+    font-weight: bold;
+    color: darkgoldenrod;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.alumni-name {
+    font-weight: bold;
+    color: khaki;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-shadow:
+        1px 1px 0 rgb(80, 58, 3),
+        -1px -1px 0 darkgoldenrod,
+        1px -1px 0 darkorange,
+        -1px 1px 0 #000,
+        2px 2px 5px rgba(0, 0, 0, .3);
+}
+
+.alumni-desc {
+    color: #000;
+}
+
+.alumni-hashtag {
+    color: darkgoldenrod;
+    font-weight: bolder;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    font-size: larger;
+}
+
+@media screen and (max-width: 920px) {
+    .banner img {
+        width: 600px;
+    }
+
+    .container .link-out {
+        display: flex;
+        gap: 20px;
+        top: 157px;
+        writing-mode: vertical-rl;
+    }
+
+    .container .announce {
+        height: 200px;
+    }
+
+    .announce .announce-table {
+        top: 20px;
+        width: 78%;
+        min-width: 350px;
+    }
+
+    .main {
+        margin-top: 8rem;
+        height: 1350px;
+    }
+
+    .main-pic {
+        display: none;
+    }
+
+    .main-desc {
+        display: block;
+        width: 100%;
+        background-image: none;
+    }
+
+    .main-desc div {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+        gap: 10px;
+    }
+
+    .main-desc div:last-child {
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-width: 565px) {
+    .banner img {
+        margin-top: 2rem;
+    }
+}

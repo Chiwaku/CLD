@@ -1,0 +1,124 @@
+@charset "utf-8";
+
+.container {
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+    width: 80%;
+    height: auto;
+}
+
+h3 {
+    background-image: linear-gradient(to right, goldenrod, #fff);
+    color: #fff;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
+    padding-top: 7px;
+    height: 2.6rem;
+    line-height: 2.4rem;
+    font-size: 2rem;
+    font-weight: bolder;
+    text-indent: 1em;
+    margin-bottom: 30px;
+    position: sticky;
+    top: 4rem;
+    z-index: 16;
+}
+
+.visa-sec {
+    width: 95%;
+    margin-left: 2%;
+    margin-bottom: 50px;
+}
+
+.visa-sec a {
+    font-weight: 560;
+    color: rgb(136, 99, 5);
+}
+
+.visa-sec a:hover {
+    color: crimson;
+}
+
+.visa-title {
+    line-height: 2rem;
+    font-size: 1.1rem;
+    font-weight: bolder;
+    color: brown;
+}
+
+.visa-body {
+    background-color: rgb(250, 247, 233);
+    padding-left: 50px;
+}
+
+.visa-body li {
+    position: relative;
+    line-height: 2rem;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.visa-body h6 {
+    width: 15%;
+    text-align: center;
+}
+
+.outer-list li p {
+    margin-left: 1.5em;
+    text-indent: -1.4em;
+}
+
+.body-header {
+    font-weight: 600;
+}
+
+.outer-list li p::before {
+    content: "•";
+    font-size: 1.4rem;
+    margin-right: 20px;
+    color: brown;
+}
+
+.outer-list section {
+    margin-left: 2rem;
+}
+
+.reminder {
+    position: relative;
+    background-color: lightgoldenrodyellow;
+    border: 2px dotted orange;
+    width: 70%;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    font-size: 1.1rem;
+}
+
+.reminder a {
+    color: orangered;
+    font-weight: bolder;
+}
+
+.fa-triangle-exclamation {
+    position: absolute;
+    top: 1rem;
+    left: -78px;
+    font-size: 61px;
+    color: orange;
+}
+
+@media screen and (max-width: 920px) {
+    h3 {
+        text-align: center;
+        text-indent: 0;
+        background-image: none;
+        background-color: goldenrod;
+    }
+}
+
+@media screen and (max-width: 565px) {
+    h3 {
+        margin-top: 2rem;
+        top: 6rem;
+    }
+}
