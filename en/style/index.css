@@ -5,6 +5,7 @@
     width: 100%;
     height: auto;
     position: relative;
+    overflow: hidden;
 }
 
 .banner {
@@ -199,11 +200,21 @@ input:hover {
     background-color: yellow;
 }
 
-.alumni {
+.alumni-wrapper {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
     margin-top: 50px;
     margin-bottom: 50px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    min-width: 0;
+}
+
+.alumni {
     width: 800px;
     height: auto;
+    flex-shrink: 0;
 }
 
 .alumni-profile {
@@ -247,6 +258,12 @@ input:hover {
     margin-top: 10px;
     margin-bottom: 50px;
     font-size: larger;
+}
+
+@media screen and (max-width: 1069px) {
+    .fa-bullhorn {
+        margin-left: 45px;
+    }
 }
 
 @media screen and (max-width: 920px) {
@@ -296,6 +313,7 @@ input:hover {
     .main-desc div:last-child {
         padding-right: 0;
     }
+
 }
 
 @media screen and (max-width: 565px) {

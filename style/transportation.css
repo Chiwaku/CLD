@@ -1,21 +1,24 @@
 @charset "utf-8";
 
-.container {
-    margin-top: 6rem;
-    margin-bottom: 2rem;
-    width: 80%;
-    height: auto;
-}
-
 .notabene {
     background-color: rgb(193, 243, 193);
     color: green;
-    width: 90%;
 }
 
 .notabene-lite {
     font-weight: 600;
     color: green;
+}
+
+.map-link {
+    display: block;
+    width: 160px;
+    height: auto;
+    background-color: #fff;
+    border: tan 1px solid;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    font-size: smaller;
 }
 
 .fa-folder-open {
@@ -35,15 +38,22 @@
 }
 
 .map {
-    padding: 50px;
+    padding: 20px;
 }
 
-.album {
+.map-wrapper {
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.album,
+.album-sm {
     width: 100%;
-    text-align: center;
-    vertical-align: middle;
     margin-top: 10px;
     margin-bottom: 20px;
+    text-align: center;
+    vertical-align: middle;
 }
 
 .album img {

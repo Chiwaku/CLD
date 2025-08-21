@@ -1,12 +1,5 @@
 @charset "utf-8";
 
-.container {
-    margin-top: 6rem;
-    margin-bottom: 2rem;
-    width: 80%;
-    height: auto;
-}
-
 .alert {
     background-color: rgb(240, 214, 211);
     color: rgb(187, 36, 19);
@@ -29,6 +22,11 @@ td {
 thead,
 tfoot {
     background-color: rgba(255, 215, 0, .2);
+}
+
+.table-window {
+    width: 100%;
+    overflow: auto;
 }
 
 .schedule thead th:first-child {

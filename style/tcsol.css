@@ -135,11 +135,20 @@ h3 {
         background-image: none;
         background-color: goldenrod;
     }
+
+    .container {
+        margin-top: 4rem;
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 565px) {
     h3 {
-        margin-top: 2rem;
+        margin-top: 1rem;
         top: 6rem;
+    }
+
+    .container {
+        width: 100%;
     }
 }

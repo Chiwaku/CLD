@@ -94,19 +94,24 @@ h3 {
     margin-right: 18px;
 }
 
-
 @media screen and (max-width: 920px) {
     h3 {
         text-align: center;
         text-indent: 0;
         background-image: none;
         background-color: goldenrod;
+        margin-bottom: 3rem;
+    }
+
+    .container {
+        margin-top: 4rem;
+        width: 100%;
     }
 }
 
 @media screen and (max-width: 565px) {
     h3 {
-        margin-top: 2rem;
+        margin-top: 0;
         top: 6rem;
     }
 }
