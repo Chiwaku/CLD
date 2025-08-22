@@ -311,6 +311,13 @@ input:hover {
 
 @media screen and (max-width: 565px) {
     .banner img {
-        margin-top: 2rem;
+        /* margin-top: 2rem; */
+        width: 100%;
+    }
+
+    .link-out {
+        right: 5px;
+        line-height: 1rem;
+        padding-right: 12px;
     }
 }
