@@ -118,7 +118,6 @@ a {
 }
 
 .nav-lang {
-    /* background-color: pink; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -139,6 +138,7 @@ a {
 }
 
 .nav-lang div ul {
+    margin-top: 1px;
     transition: transform 1s ease;
     transform: translateY(0);
 }
@@ -206,6 +206,11 @@ a {
     color: brown;
 }
 
+.en-nowrap {
+    display: inline-block;
+    white-space: nowrap;
+}
+
 @media screen and (max-width: 920px) {
     .nav-list>ul {
         flex-wrap: wrap;
@@ -250,9 +255,5 @@ a {
 
     .nav-lang div:hover ul {
         transform: translateY(-2rem);
-    }
-
-    .nav-lang a {
-        color: #000;
     }
 }
