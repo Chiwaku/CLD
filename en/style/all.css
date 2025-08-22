@@ -234,3 +234,26 @@ a {
         height: 2rem;
     }
 }
+
+@media screen and (max-width: 565px) {
+    .nav-lang {
+        width: 39px;
+        height: 6rem;
+    }
+
+    .nav-lang div {
+        height: 2.2rem;
+        width: 2.2rem;
+    }
+
+    .nav-lang div ul {
+        font-size: 1.8rem;
+        margin-top: .1rem;
+        transition: transform 1s ease;
+        transform: translateY(0);
+    }
+
+    .nav-lang div:hover ul {
+        transform: translateY(-2.3rem);
+    }
+}
