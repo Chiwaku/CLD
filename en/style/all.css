@@ -52,6 +52,16 @@ a {
     margin-right: 39px;
 }
 
+.nav-menu {
+    display: none;
+}
+
+.nav-menu .fa-bars {
+    color: rgb(146, 107, 7);
+    font-size: 1.8rem;
+    margin: 18px;
+}
+
 .nav-list>ul {
     display: flex;
     flex-wrap: nowrap;
@@ -138,7 +148,6 @@ a {
 }
 
 .nav-lang div ul {
-    margin-top: 1px;
     transition: transform 1s ease;
     transform: translateY(0);
 }
@@ -236,9 +245,49 @@ a {
 }
 
 @media screen and (max-width: 565px) {
+    .nav {
+        height: 2rem;
+    }
+
+    .nav-menu {
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 4rem;
+        left: 0;
+        width: 34%;
+        background-color: rgba(240, 230, 140, 1);
+    }
+
+    .nav-list li {
+        width: 100%;
+        height: 3rem;
+    }
+
+    .nav-list li:hover {
+        height: 3rem;
+    }
+
+    .nav-info ul {
+        top: 0;
+        left: 100%;
+        background-color: #fff;
+        box-shadow: 0 0 3px rgba(0, 0, 0, .5);
+        width: 250px;
+    }
+
+    .nav-info ul a {
+        width: 100%;
+    }
+
     .nav-lang {
         width: 39px;
-        height: 6rem;
+        height: 4rem;
     }
 
     .nav-lang div {
@@ -248,12 +297,10 @@ a {
 
     .nav-lang div ul {
         font-size: 1.8rem;
-        margin-top: .1rem;
-        transition: transform 1s ease;
-        transform: translateY(0);
+        margin-top: -2.2rem;
     }
 
     .nav-lang div:hover ul {
-        transform: translateY(-2.3rem);
+        transform: none;
     }
 }
