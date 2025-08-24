@@ -168,4 +168,9 @@ h3 {
     h3 {
         margin-top: 2rem;
     }
+
+    .fa-triangle-exclamation {
+        top: -1rem;
+        left: -4.2rem;
+    }
 }

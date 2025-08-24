@@ -53,13 +53,16 @@ h3 {
     padding-bottom: 10px;
 }
 
-.tcsol-body p,
-.tcsol-body li {
+.tcsol-body li,
+.tcsol-body p {
     position: relative;
     line-height: 2rem;
     font-size: 1rem;
-    display: flex;
     flex-direction: row;
+}
+
+.tcsol-body li {
+    display: flex;
 }
 
 .tcsol-body h6 {
@@ -80,6 +83,7 @@ h3 {
 }
 
 .count-list-item {
+    display: flex;
     counter-increment: visa-counter;
 }
 

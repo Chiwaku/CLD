@@ -83,3 +83,10 @@
     font-size: 61px;
     color: orange;
 }
+
+@media (max-width: 565px) {
+    .fa-triangle-exclamation {
+        top: -3rem;
+        left: -2rem;
+    }
+}
