@@ -2,6 +2,9 @@
 
 .online-illustration {
     text-align: center;
+}
+
+.online-illustration img {
     max-width: 100%;
 }
 

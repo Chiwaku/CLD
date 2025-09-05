@@ -45,6 +45,14 @@ tfoot {
     width: 5rem;
 }
 
+.textbooks {
+    min-width: auto;
+}
+
+.textbooks thead th:first-child {
+    width: 4.5rem;
+}
+
 td {
     border: 1px solid rgba(0, 0, 0, .2);
     height: 2rem;
@@ -118,4 +126,15 @@ tbody tr:nth-child(even) {
 
 .refund thead th:nth-child(2) {
     width: 20%;
+}
+
+input {
+    background-color: khaki;
+    border-radius: 20px;
+    width: 6.6rem;
+    font-size: 1.2rem;
+}
+
+input:hover {
+    background-color: yellow;
 }

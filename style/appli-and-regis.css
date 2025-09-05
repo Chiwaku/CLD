@@ -1,0 +1,69 @@
+@charset "utf-8";
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.divider {
+    width: 100%;
+    height: 30px;
+    margin-top: -2rem;
+    margin-bottom: 2rem;
+    background-image: radial-gradient(ellipse at bottom, gold, transparent, transparent);
+    position: relative;
+}
+
+.divider::after {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 48%;
+    display: block;
+    border-top: 12px solid gold;
+    border-bottom: 12px solid transparent;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+}
+
+.friendlyreminder {
+    background-color: lightblue;
+}
+
+.apply-notabene {
+    font-weight: 600;
+    color: darkred;
+}
+
+.healthcheckup {
+    max-width: 100%;
+    background-color: lightgoldenrodyellow;
+    border: 5px solid goldenrod;
+    border-radius: 10px;
+    margin-top: -2rem;
+    padding: 1rem;
+}
+
+.correspondence {
+    max-width: 100%;
+    background-color: lightskyblue;
+    border: 5px solid cornflowerblue;
+    border-radius: 10px;
+    margin-top: -2rem;
+    padding: 1rem;
+}
+
+.super-indent {
+    margin-left: 4rem;
+}
+
+@media (max-width: 565px) {
+    .healthcheckup {
+        margin-top: -1rem;
+    }
+
+    .correspondence {
+        margin-top: -1rem;
+    }
+}

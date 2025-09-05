@@ -72,15 +72,15 @@ h3 {
     font-weight: 600;
 }
 
-.dot-list-item {
-    display: flex;
-    flex-direction: row;
+.dot-list-item-indent {
+    text-indent: -2rem;
+    margin-left: 2rem;
 }
 
 .dot-list-item::before {
     content: "•";
-    font-size: 1.4rem;
-    margin-right: 20px;
+    font-size: 1.5rem;
+    margin-right: 1.5rem;
     color: brown;
 }
 
@@ -111,7 +111,16 @@ h3 {
 
 @media screen and (max-width: 565px) {
     h3 {
-        margin-top: 0;
-        top: 4rem;
+        /* margin-top: 0;
+        top: 4rem; */
+        display: none;
+    }
+
+    .container {
+        margin-top: 5rem;
+    }
+
+    .visa-body {
+        padding: 15px;
     }
 }

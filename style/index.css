@@ -310,9 +310,18 @@ input:hover {
 }
 
 @media screen and (max-width: 565px) {
-    .banner img {
-        /* margin-top: 2rem; */
+    .nav-thispage img {
         width: 100%;
+    }
+
+    .container {
+        margin-top: 2rem;
+    }
+
+    .banner img {
+        display: none;
+        /* margin-top: 2rem; */
+        /* width: 100%; */
     }
 
     .link-out {
