@@ -22,13 +22,6 @@ $navTrain
         $(this).find('ul').hide()
     })
 
-// pure hide-and-show 
-// $navMenu
-//     .on('click', function () {
-//         $navList.toggleClass('active')
-//     })
-
-// slideToggle 
 $navMenu
     .on('click', function (e) {
         e.stopPropagation();
