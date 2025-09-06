@@ -1,5 +1,13 @@
 @charset "utf-8";
 
+html,
+body {
+    -webkit-text-size-adjust: none;
+    /* iOS Safari */
+    text-size-adjust: none;
+    /* 標準屬性 */
+}
+
 .online-illustration {
     text-align: center;
 }
