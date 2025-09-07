@@ -1,13 +1,5 @@
 @charset "utf-8";
 
-html,
-body {
-    -webkit-text-size-adjust: none;
-    /* iOS Safari */
-    text-size-adjust: none;
-    /* 標準屬性 */
-}
-
 .online-illustration {
     text-align: center;
 }
@@ -30,6 +22,29 @@ body {
 
 .ultra-indent {
     margin-left: 10rem;
+}
+
+.grand-header {
+    margin-top: .8rem;
+    font-size: 2.4rem;
+    font-weight: 700;
+    text-align: center;
+    color: #7e0a0a;
+}
+
+.sub-header {
+    font-size: 1.4rem;
+    font-weight: 550;
+    margin-bottom: 2.4rem;
+    text-align: center;
+    color: darkgoldenrod;
+}
+
+.visa-body .japanese-version {
+    margin-top: 1rem;
+    color: rgb(37, 98, 211);
+    font-size: 1rem;
+    line-height: 1.6rem;
 }
 
 .twoitems {
@@ -55,16 +70,14 @@ body {
     padding-right: 30px;
     font-size: larger;
     border-bottom: 1px solid #ddd;
+    font-weight: 600;
+    color: rgb(37, 98, 211);
 }
 
 .item-body {
     padding: 10px;
     height: auto;
     display: block;
-}
-
-.twoitems li:last-child .item-body {
-    text-align: center;
 }
 
 .twoitems li .count-list-item {
@@ -75,17 +88,6 @@ body {
     color: cornflowerblue;
     font-size: 2rem;
     margin-right: 5px;
-}
-
-input {
-    background-color: khaki;
-    font-size: 1rem;
-    border-radius: 20px;
-    width: 8rem;
-}
-
-input:hover {
-    background-color: yellow;
 }
 
 .visa-body {
@@ -116,7 +118,32 @@ input:hover {
     margin-right: 18px;
 }
 
+.dot-list-item {
+    text-indent: -2rem;
+    margin-left: 2rem;
+}
+
+.main-flex {
+    display: flex;
+}
+
+.main-text {
+    min-width: 70%;
+}
+
+.main-image {
+    text-align: center;
+}
+
+.main-image img {
+    max-width: 80%;
+}
+
 @media screen and (max-width: 920px) {
+    .main-flex {
+        display: block;
+    }
+
     .twoitems {
         flex-direction: column;
         gap: 30px;
