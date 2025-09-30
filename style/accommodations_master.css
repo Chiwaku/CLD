@@ -123,6 +123,18 @@
     margin-left: 2rem;
 }
 
+.cube-list-item {
+    margin-left: 4rem;
+    flex-direction: column;
+}
+
+.cube-list-item::before {
+    content: "■";
+    font-size: 1rem;
+    margin-right: 1.5rem;
+    color: rgb(212, 134, 134);
+}
+
 .main-flex {
     display: flex;
 }
@@ -139,7 +151,16 @@
     max-width: 80%;
 }
 
+.breakword {
+    word-break: break-word;
+}
+
 @media screen and (max-width: 920px) {
+    h3 {
+        top: 0;
+        z-index: 25;
+    }
+
     .main-flex {
         display: block;
     }
@@ -151,5 +172,11 @@
 
     .twoitems li {
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 565px) {
+    .nav-thispage {
+        margin-right: 0;
     }
 }
